@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  --color-violet: #4c5fd5;
+  --color-light-violet: #dadbf1;
+  --color-black: #000000;
+  --color-white: #fff;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+main {
+  margin: auto;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+.btn {
+  font: inherit;
+  padding: 7px 15px;
+  border: none;
+  background-color: var(--color-violet);
+  color: white;
+  border-radius: 5px;
+}
+
+.btn.alt {
+  background-color: #161616;
+  border: 1px solid white;
+}
+
+section > div,
+footer > div,
+header > nav {
+  margin: auto;
+  max-width: 60rem;
+}
+
+#mobile-btn {
+  all: unset;
+  background-color: transparent;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+#mobile-btn span {
+  height: 0.2rem;
+  width: 2.3rem;
+  background-color: white;
+}

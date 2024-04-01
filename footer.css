@@ -1,0 +1,42 @@
+footer {
+  background-color: var(--color-black);
+  color: white;
+}
+
+footer > div {
+  padding: 2rem 0;
+  width: 90%;
+}
+
+footer h4 {
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: clamp(0.5rem, 0.8vw, 0.7rem);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+footer ul li:nth-child(4) > p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+footer > div:last-of-type {
+  text-align: center;
+}
+
+@media (min-width: 100rem) {
+  footer h4 {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+}

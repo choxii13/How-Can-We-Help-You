@@ -1,0 +1,44 @@
+.btn:hover,
+.btn.alt:hover {
+  cursor: pointer;
+}
+
+header {
+  height: 3.5rem;
+  background-color: var(--color-black);
+  margin: auto;
+  color: white;
+  font-size: 0.8rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  width: 90%;
+  font-weight: 600;
+}
+header nav div:nth-child(2) {
+  display: none;
+}
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+header nav div span {
+  background-color: white;
+  width: 0.07rem;
+}
+
+@media (min-width: 48rem) {
+  header nav div:nth-child(2) {
+    display: flex;
+  }
+  #mobile-btn {
+    display: none;
+  }
+}
